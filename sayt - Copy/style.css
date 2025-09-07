@@ -1,0 +1,65 @@
+body {
+  margin: 0;
+  font-family: Arial, sans-serif;
+  background: #0d0f14;
+  color: #e8edf3;
+}
+
+/* Шапка */
+header {
+  background: #151821;
+  padding: 15px 30px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+header .logo {
+  font-size: 20px;
+  font-weight: bold;
+}
+header nav a {
+  margin-left: 15px;
+  color: #e8edf3;
+  text-decoration: none;
+}
+header nav a:hover {
+  color: #ff4b2b;
+}
+
+/* Герой */
+.hero {
+  text-align: center;
+  padding: 80px 20px;
+}
+.hero h1 {
+  font-size: 32px;
+  margin-bottom: 10px;
+}
+.hero p {
+  margin-bottom: 20px;
+}
+.btn {
+  background: linear-gradient(90deg, #ff4b2b, #ff8a00);
+  color: #fff;
+  padding: 12px 20px;
+  border-radius: 10px;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+/* Карточки */
+.card {
+  max-width: 800px;
+  margin: 40px auto;
+  padding: 20px;
+  background: #151821;
+  border-radius: 10px;
+}
+
+/* Футер */
+footer {
+  text-align: center;
+  padding: 20px;
+  background: #151821;
+  margin-top: 40px;
+}

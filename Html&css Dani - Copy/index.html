@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+  <meta charset="UTF-8">
+  <title>Защищённый сайт</title>
+  <style>
+    body {
+      background-color: #111;
+      color: white;
+      font-family: Arial, sans-serif;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .box {
+      background: #222;
+      padding: 20px;
+      border-radius: 10px;
+      text-align: center;
+    }
+    input {
+      padding: 10px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+    }
+    button {
+      padding: 10px 20px;
+      margin-top: 10px;
+      border: none;
+      border-radius: 5px;
+      background: #f39c12;
+      color: #fff;
+      cursor: pointer;
+    }
+    button:hover {
+      background: #d35400;
+    }
+  </style>
+</head>
+<body>
+
+  <div class="box">
+    <h2>Введите ключ для входа</h2>
+    <input type="password" id="keyInput" placeholder="Ключ доступа">
+    <br>
+    <button onclick="checkKey()">Войти</button>
+    <p id="error" style="color: red;"></p>
+  </div>
+
+  <script>
+    function checkKey() {
+      const key = document.getElementById("keyInput").value;
+      const correctKey = "0-8456-5914-7301"; // 🔑 ТВОЙ ключ
+
+      if (key === correctKey) {
+        window.location.href = "main.html"; // переход на сайт
+      } else {
+        document.getElementById("error").textContent = "Неверный ключ!";
+      }
+    }
+  </script>
+
+</body>
+</html>
